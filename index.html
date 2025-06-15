@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Netflix Clone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- 🔴 NAVBAR -->
+  <header class="navbar">
+    <img src="images/logo.png" alt="Netflix Logo" class="logo" />
+    <nav>
+      <ul class="nav-links">
+        <li>Home</li>
+        <li>TV Shows</li>
+        <li>Movies</li>
+        <li>My List</li>
+      </ul>
+    </nav>
+    <select class="language-select">
+      <option value="en">🌐 English</option>
+      <option value="hi">हिन्दी</option>
+    </select>
+    <button class="signin-btn">Sign In</button>
+  </header>
+
+  <!-- 🎬 HERO BANNER -->
+  <section class="banner">
+    <div class="banner-content">
+      <h1 class="banner-title">Unlimited movies, TV shows and more</h1>
+      <p class="banner-description">Starts at ₹149. Cancel anytime.</p>
+      <p class="banner-description">Ready to watch? Enter your email to create or restart your membership.</p>
+      <form class="signup-form">
+        <input type="email" placeholder="Email address" required />
+        <button type="submit">Get Started ></button>
+      </form>
+    </div>
+  </section>
+
+  <!-- 📺 TRENDING NOW -->
+  <section class="row">
+    <h2>Trending Now</h2>
+    <div class="row-posters">
+      <img src="images/movie1.jpg" class="poster" />
+      <img src="images/movie2.jpg" class="poster" />
+      <img src="images/movie3.jpg" class="poster" />
+      <img src="images/movie4.jpg" class="poster" />
+      <img src="images/movie5.jpg" class="poster" />
+      <img src="images/movie6.jpg" class="poster" />
+      <img src="images/movie7.jpg" class="poster" />
+      <img src="images/movie8.jpg" class="poster" />
+      <img src="images/movie9.jpg" class="poster" />
+      <img src="images/movie10.jpg" class="poster" />
+    </div>
+  </section>
+
+  <!-- 💳 PLANS SECTION -->
+  <section class="plans">
+    <h2>A plan to suit your needs</h2>
+    <div class="plan-cards">
+      <div class="plan-card">
+        <h3>Mobile</h3>
+        <ul>
+          <li>480p</li>
+          <li>Phone or tablet only</li>
+        </ul>
+        <p>₹149 /mo</p>
+      </div>
+      <div class="plan-card">
+        <h3>Basic</h3>
+        <ul>
+          <li>720p</li>
+          <li>Great quality</li>
+          <li>Phone, tablet, laptop, TV</li>
+        </ul>
+        <p>₹199 /mo</p>
+      </div>
+      <div class="plan-card popular">
+        <h3>Standard <span>Most Popular</span></h3>
+        <ul>
+          <li>1080p</li>
+          <li>Great quality</li>
+          <li>Phone, tablet, laptop, TV</li>
+        </ul>
+        <p>₹499 /mo</p>
+      </div>
+      <div class="plan-card">
+        <h3>Premium</h3>
+        <ul>
+          <li>4K + HDR</li>
+          <li>Best quality</li>
+          <li>All devices supported</li>
+        </ul>
+        <p>₹649 /mo</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 💡 FEATURES SECTION -->
+  <section class="features">
+    <div class="feature-box">
+      <h3>Enjoy on your TV</h3>
+      <p>Smart TVs, PlayStation, Xbox, Chromecast & more.</p>
+    </div>
+    <div class="feature-box">
+      <h3>Download shows</h3>
+      <p>Watch offline anytime, anywhere.</p>
+    </div>
+    <div class="feature-box">
+      <h3>Watch everywhere</h3>
+      <p>Stream on phones, tablets, laptops, and TVs.</p>
+    </div>
+    <div class="feature-box">
+      <h3>Create profiles for kids</h3>
+      <p>Kids get their own space with family-friendly shows.</p>
+    </div>
+  </section>
+
+ <section class="faq">
+  <h2>Frequently Asked Questions</h2>
+
+  <div class="faq-item">
+    <input type="checkbox" id="q1" />
+    <label for="q1">What is Netflix?</label>
+    <div class="faq-answer">
+      <p>Netflix is a streaming platform offering a wide variety of shows, movies, anime, and more.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <input type="checkbox" id="q2" />
+    <label for="q2">How much does Netflix cost?</label>
+    <div class="faq-answer">
+      <p>Plans start at ₹149 per month with no hidden fees. Cancel anytime.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <input type="checkbox" id="q3" />
+    <label for="q3">Where can I watch?</label>
+    <div class="faq-answer">
+      <p>Watch anywhere, anytime. Sign in on the web or use the Netflix app on smart TVs, smartphones, and more.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <input type="checkbox" id="q4" />
+    <label for="q4">How do I cancel?</label>
+    <div class="faq-answer">
+      <p>Netflix is flexible. No contracts. Cancel online anytime — no cancellation fees.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <input type="checkbox" id="q5" />
+    <label for="q5">What can I watch on Netflix?</label>
+    <div class="faq-answer">
+      <p>Everything from hit movies to exclusive Netflix Originals — and new stuff gets added all the time.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <input type="checkbox" id="q6" />
+    <label for="q6">Is Netflix good for kids?</label>
+    <div class="faq-answer">
+      <p>Yes. Netflix Kids has family-friendly content and parental controls.</p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- 🦶 FOOTER -->
+  <footer class="footer">
+    <p>© 2025 Netflix Clone | Made with ❤️ by Akshita</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,266 @@
+/* 🌍 General */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+}
+
+/* 🔴 Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: black;
+}
+
+.logo {
+  width: 100px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+.nav-links li {
+  cursor: pointer;
+}
+
+.language-select {
+  margin-right: 1rem;
+  padding: 0.4rem;
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 4px;
+}
+
+.signin-btn {
+  background-color: #e50914;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* 🎬 Banner */
+.banner {
+  position: relative;
+  background: url("images/banner.jpg") center center/cover no-repeat;
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
+.banner-content {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+  margin: auto;
+}
+
+.banner-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.banner-description {
+  margin: 0.5rem 0;
+}
+
+.signup-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 0.5rem;
+}
+
+.signup-form input {
+  padding: 0.8rem;
+  font-size: 1rem;
+  width: 300px;
+  max-width: 80%;
+  border: none;
+}
+
+.signup-form button {
+  background-color: #e50914;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.signup-form button:hover {
+  background-color: #b4060b;
+  transform: scale(1.05);
+}
+
+/* 📺 Trending Row */
+.row {
+  padding: 2rem;
+}
+
+.row-posters {
+  display: flex;
+  overflow-x: auto;
+  gap: 0.5rem;
+  padding: 1rem 0;
+}
+
+.poster {
+  width: 150px;
+  border-radius: 5px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.poster:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+  z-index: 2;
+}
+
+/* 💳 Plans */
+.plans {
+  background: #111;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.plan-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.plan-card {
+  background: #222;
+  padding: 1.5rem;
+  width: 220px;
+  border-radius: 10px;
+  border: 2px solid #333;
+  transition: transform 0.3s ease;
+}
+
+.plan-card:hover {
+  transform: scale(1.05);
+}
+
+.plan-card h3 {
+  margin-bottom: 1rem;
+}
+
+.plan-card span {
+  background-color: #e50914;
+  color: white;
+  padding: 2px 6px;
+  font-size: 0.75rem;
+  border-radius: 4px;
+}
+
+.plan-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+}
+
+.plan-card p {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.plan-card.popular {
+  border-color: #e50914;
+}
+
+/* 💡 Features */
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 3rem 1rem;
+  justify-content: center;
+  background: #000;
+}
+
+.feature-box {
+  background: #222;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+}
+
+/* ❓ FAQ */
+.faq {
+  padding: 3rem 1rem;
+}
+
+.faq-item {
+  margin-bottom: 1rem;
+}
+
+.faq-item input {
+  display: none;
+}
+
+.faq-item label {
+  background: #333;
+  padding: 1rem;
+  display: block;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  background: #222;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+  padding: 0 1rem;
+}
+
+.faq-item input:checked + label + .faq-answer {
+  max-height: 200px;
+  padding: 1rem;
+}
+
+/* 🦶 Footer */
+.footer {
+  background: #000;
+  padding: 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* ✨ Fade In Animation for Sections */
+section {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+  animation-delay: 0.2s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
